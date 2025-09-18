@@ -1,0 +1,5 @@
+{
+  "name": "Document Dashboard",
+  "description": "A dashboard for managing and tracking company documents with filtering, search, and admin controls.",
+  "requestFramePermissions": []
+}

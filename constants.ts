@@ -1,0 +1,88 @@
+import { Document, Division, Category, Status } from './types';
+
+export const MOCK_DOCUMENTS: Document[] = [
+  {
+    id: 'doc-001',
+    name: 'Employee Handbook 2024',
+    number: 'HR-POL-001',
+    division: Division.HR,
+    category: Category.POLICY,
+    status: Status.APPROVED,
+    link: 'https://docs.google.com/document/d/1aBcDeFgHiJkLmNoPqRsTuVwXyZ/edit',
+    createdAt: '2024-01-15',
+  },
+  {
+    id: 'doc-002',
+    name: 'Q2 Financial Report',
+    number: 'FIN-REP-012',
+    division: Division.FINANCE,
+    category: Category.REPORT,
+    status: Status.IN_REVIEW,
+    link: 'https://docs.google.com/spreadsheets/d/2bCdEfGhIjKlMnOpQrStUvWxYz/edit',
+    createdAt: '2024-07-05',
+  },
+  {
+    id: 'doc-003',
+    name: 'New Client Contract - Acme Corp',
+    number: 'OPS-CON-034',
+    division: Division.OPERATIONS,
+    category: Category.CONTRACT,
+    status: Status.DRAFT,
+    link: 'https://docs.google.com/document/d/3cDeFgHiJkLmNoPqRsTuVwXyZa/edit',
+    createdAt: '2024-07-20',
+  },
+  {
+    id: 'doc-004',
+    name: 'IT Security Policy',
+    number: 'IT-POL-002',
+    division: Division.IT,
+    category: Category.POLICY,
+    status: Status.APPROVED,
+    link: 'https://docs.google.com/document/d/4dEfGhIjKlMnOpQrStUvWxYzAb/edit',
+    createdAt: '2023-11-20',
+  },
+  {
+    id: 'doc-005',
+    name: 'Summer Marketing Campaign Analysis',
+    number: 'MKT-REP-007',
+    division: Division.MARKETING,
+    category: Category.REPORT,
+    status: Status.ARCHIVED,
+    link: 'https://docs.google.com/presentation/d/5eFgHiJkLmNoPqRsTuVwXyZaBc/edit',
+    createdAt: '2023-09-01',
+  },
+  {
+    id: 'doc-006',
+    name: 'Vendor Invoice - Tech Solutions',
+    number: 'FIN-INV-1052',
+    division: Division.FINANCE,
+    category: Category.INVOICE,
+    status: Status.APPROVED,
+    link: 'https://docs.google.com/document/d/6fGhIjKlMnOpQrStUvWxYzAbCd/edit',
+    createdAt: '2024-07-18',
+  },
+  {
+    id: 'doc-007',
+    name: 'Onboarding Manual for New Hires',
+    number: 'HR-MAN-003',
+    division: Division.HR,
+    category: Category.MANUAL,
+    status: Status.IN_REVIEW,
+    link: 'https://docs.google.com/document/d/7gHiJkLmNoPqRsTuVwXyZaBcDe/edit',
+    createdAt: '2024-06-10',
+  },
+  {
+    id: 'doc-008',
+    name: 'Software Licensing Agreement',
+    number: 'IT-CON-005',
+    division: Division.IT,
+    category: Category.CONTRACT,
+    status: Status.DRAFT,
+    link: 'https://docs.google.com/document/d/8hIjKlMnOpQrStUvWxYzAbCdEf/edit',
+    createdAt: '2024-07-22',
+  },
+];
+
+export const DIVISIONS: Division[] = Object.values(Division);
+export const CATEGORIES: Category[] = Object.values(Category);
+export const STATUSES: Status[] = Object.values(Status);
